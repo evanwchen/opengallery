@@ -2,6 +2,7 @@ FROM node:argon
 
 RUN npm install webpack -g
 RUN npm install nodemon -g
+RUN npm install forever -g
 
 COPY . /usr/src/app/
 WORKDIR /usr/src/app
